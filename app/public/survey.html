@@ -30,7 +30,7 @@
                 </div>
                 <div class="form-group">
                     <label for="photo">Link to your photo</label>
-                    <input type="text" class="form-control" id="photo" required>
+                    <input type="text" class="form-control" id="photo" placeholder="https://url" required>
                 </div>
             </form>
             <!-- </div> -->
@@ -137,18 +137,18 @@
                 <option value="1">1 (Strongly Disagree)</option>
             </select>
         </div>
-        <!-- </div> -->
+        
     </div>
     <div class="text-center">
-        <a href="#">
-            <button type="button" class="btn" id="submit" data-toggle="modal" data-target="#best-match-modal">
+        <a href=".............#">
+            <button type="button" class="btn btn-primary" id="submit" data-toggle="modal" data-target="#best-match-modal">
                 <p>Submit Answers</p>
             </button>
         </a>
     </div>
     <div class="text-center">
-        <a href="/">
-            <button type="button" class="btn" id="home">
+        <a href="home.html">
+            <button type="button" class="btn btn-primary height = 25px; width = 30px;" id="home">
                 <p>Home</p>
             </button>
         </a>
@@ -156,13 +156,13 @@
 
     <footer class="footer text-center">
         <div class="container">
-            <p class="copyright">&copy; Victor Chung</p>
-            <p class="github-link" target="_blank"><a href="https://github.com/Vkcgithub2019/FriendFinder" target="_blank">GitHub Repo</a></p>
+            <p class="copyright">&copy; Victor Chung 2019</p>
+            <p class="github-link" target="_blank"><a href="https://github.com/vkcgithub2019/FriendFinder" target="_blank">GitHub Repo</a></p>
             <p class="api-friends-list"><a href="http://.herokuapp.com/api/friends">Api Friends List</a></p>
         </div>
     </footer>
-    <!-- ****************************************************************************************** -->
-    <!-- Modal -->
+    
+    <!-- Modal after completing the questionaire-->
     <div class="modal fade" id="best-match-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -181,12 +181,10 @@
     </div>
     <!-- ****************************************************************************************** -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- VEX MODALS -->
-    <script src="app/public/vex.combined.min.js"></script>
-    <script>
-    vex.defaultOptions.className = 'vex-theme-os';
-    </script>
+    
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    
     <script type="text/javascript">
     $(function() {
         $("#name").focus();
@@ -230,14 +228,16 @@
                 console.log(bestMatch);
                 $("#bestMatch-name").html("<h2 style='font-size: 4em;'>" + bestMatch.name + "</h2>");
                 $("#bestMatch-photo").html("<img src='" + bestMatch.photo + "' alt='best match photo'>");
+                //bring up the modal
+                $("#best-match-modal").modal("toggle")
             });
 
-            $("#name").val("");
+            /* $("#name").val("");
             $("#photo").val("");
             $(".q").val("");
-            $("#name").focus();
+            $("#name").focus(); */
         } else {
-            vex.dialog.alert("It looks like you may have missed a question or forgotten to include a photo link; please go back and check that all fields are completed");
+            console.log("Please go back and check that all fields are completed");
             return false;
         }
     });
