@@ -7,7 +7,7 @@ var friends = [
     
     {
         name: "Bruce Lee ",
-        photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSDhePl9UgMd4wKyL6RNAkBfFfET7RKwJI055YEAIxZnip34yN",
+        photo: "https://imgix.ranker.com/user_node_img/32/635699/original/bruce-lee-athletes-photo-u14?w=650&q=50&fm=pjpg&fit=crop&crop=faces",
         scores: [2,3,4,3,2,4,3,2,1,4]
     },
     
