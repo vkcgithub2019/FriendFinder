@@ -12,19 +12,13 @@ module.exports = function(app) {
 
   });
 
-
-
   app.post("/api/friends", function(req, res) {
 
     console.log(req.body.scores);
 
-
-
     // Receive user details (name, photo, scores)
 
     var user = req.body;
-
-
 
     // parseInt for scores
 
@@ -34,28 +28,22 @@ module.exports = function(app) {
 
     }
 
-
-
     // default friend match is the first friend but result will be whoever has the minimum difference in scores
 
     var bestFriendIndex = 0;
 
     var minimumDifference = 40;
 
-
-
-    // in this for-loop, start off with a zero difference and compare the user and the ith friend scores, one set at a time
-
-    //  whatever the difference is, add to the total difference
-
+    // the comparison loop and 
+    
     for(var i = 0; i < friends.length; i++) {
-
+    // initialize with zero difference
       var totalDifference = 0;
-
+    //   compare the user and the ith friend scores, one set at a time
       for(var j = 0; j < friends[i].scores.length; j++) {
-
+    //no negative value allowed, use absolute value
         var difference = Math.abs(user.scores[j] - friends[i].scores[j]);
-
+    //  whatever the difference is, add to the total difference 
         totalDifference += difference;
 
       }
@@ -76,13 +64,13 @@ module.exports = function(app) {
 
 
 
-    // after finding match, add user to friend array
+    // the new user is added to friend array
 
     friends.push(user);
 
 
 
-    // send back to browser the best friend match
+    // display the best friend match
 
     res.json(friends[bestFriendIndex]);
 
