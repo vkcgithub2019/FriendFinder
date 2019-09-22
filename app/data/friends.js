@@ -7,7 +7,7 @@ var friends = [
     
     {
         name: "Bruce Lee ",
-        photo: "https://imgix.ranker.com/user_node_img/32/635699/original/bruce-lee-athletes-photo-u14?w=650&q=50&fm=pjpg&fit=crop&crop=faces",
+        photo: "https://cityonfire.com/wp-content/uploads/2017/12/BruceLee.jpg",
         scores: [2,3,4,3,2,4,3,2,1,4]
     },
     
