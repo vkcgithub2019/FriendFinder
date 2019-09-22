@@ -1,6 +1,6 @@
 Friend Finder-Node and Express Servers
 
-This friend finder application works like a dating app. There is a home page with links to a survey page where the user can fill out a compatibility survey. There is also a link to the API Friends list and to the author's Github page.
+This friend finder application works like a dating app. There is a home page with links to a survey page where the user can fill out a compatibility survey which consisted of 10 questions with 5 drop down answer choices. There is also a link to the API Friends list and to the author's Github page.
 
 The application's data is saved inside of app/data/friends.js as an array of objects. Each of these objects has the name of friend, a link to his/her photo, and his/her scores (1 - 5).
 
@@ -10,4 +10,6 @@ The application's data is saved inside of app/data/friends.js as an array of obj
  Once the most compatible friend is found, the result is displayed as a modal pop-up. The modal will display both the name and picture of the closest match.
 
  Finally, the app is deployed in Heroku. 
+
+ Technologies used:Node and Server express, NPM packages: Express, body-parser, path.
 

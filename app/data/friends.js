@@ -7,7 +7,7 @@ var friends = [
     
     {
         name: "Bruce Lee ",
-        photo: "https://thatguyreviews.com/wp-content/uploads/2019/01/brucelee2-1.png",
+        photo: "https://thatguyreviews.com/wp-content/uploads/2019/01/brucelee2-1-150x150.png",
         scores: [4,4,4,4,4,4,4,4,4,4]
     },
     
