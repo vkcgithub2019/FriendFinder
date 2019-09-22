@@ -14,6 +14,5 @@ The application's data is saved inside of app/data/friends.js as an array of obj
  Technologies used:Node and Server express, NPM packages: Express, body-parser, path.
 
  Here is the link to the heroku site: https://protected-everglades-04089.herokuapp.com/
- Here is the link to my Github repositories: https://github.com/vkcgithub2019/FriendFinder
- Here is the link to my portfolio page: https://vkcgithub2019.github.io/Responsive-Portfolio/
+ 
 
