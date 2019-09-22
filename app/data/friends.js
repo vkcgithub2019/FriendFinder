@@ -33,6 +33,13 @@ var friends = [
         name: "Lucy Lawless",
         photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIZ8cFPWn9xsGcE7Ri5cg2qZ9yYepiD9Fv1VdV9QS79QfDgBCaeQ",
         scores: [3,3,3,3,3,3,3,3,3,3]
-    }];
-
+    }
+    ,
+    {
+        name: "Royce Gracie",
+        photo: "https://usatmmajunkie.files.wordpress.com/2013/07/royce-gracie-1.jpg",
+        scores: [3,3,3,3,3,3,3,3,3,3]
+    }   
+    ]
+     
     module.exports = friends;
