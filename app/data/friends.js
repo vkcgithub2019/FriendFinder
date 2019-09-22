@@ -8,7 +8,7 @@ var friends = [
     {
         name: "Bruce Lee ",
         photo: "https://cityonfire.com/wp-content/uploads/2017/12/BruceLee.jpg",
-        scores: [2,3,4,3,2,4,3,2,1,4]
+        scores: [4,4,4,4,4,4,4,4,4,4]
     },
     
     {
