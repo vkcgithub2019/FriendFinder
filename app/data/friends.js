@@ -1,7 +1,7 @@
 var friends = [
     {
         name: "Bill Gates",
-        photo: "https://www.famous-entrepreneurs.com/images/bill-gates.jpg",
+        photo: "https://financesonline.com/uploads/gates2-150x150.jpg",
         scores: [5,5,5,5,5,5,5,5,5,5]
     },
     
