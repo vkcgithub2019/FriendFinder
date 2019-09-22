@@ -32,7 +32,7 @@ var friends = [
     {
         name: "Lucy Lawless",
         photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIZ8cFPWn9xsGcE7Ri5cg2qZ9yYepiD9Fv1VdV9QS79QfDgBCaeQ",
-        scores: [5,5,5,5,5,5,5,5,5,5]
+        scores: [3,3,3,3,3,3,3,3,3,3]
     }];
 
     module.exports = friends;
