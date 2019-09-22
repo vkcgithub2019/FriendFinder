@@ -205,7 +205,7 @@
                 if ($(this).val() === null) {
                     validForm = false;
                 }
-                // console.log($(this).val());
+                 console.log($(this).val());
             });
 
             if ($("#q1").val() === "" || $("#q2").val() === "" || $("#q3").val() === "" || $("#q4").val() === "" || $("#q5").val() === "" || $("#q6").val() === "" || $("#q7").val() === "" || $("#q8").val() === "" || $("#q9").val() === "" || $("#q10").val() === "") {
@@ -224,22 +224,24 @@
 
             var currentURL = window.location.origin;
 
+        //AJAX post the data to the friends route
             $.post(currentURL + "/api/friends", newUser).done(function(bestMatch) {
                 console.log(bestMatch);
                 $("#bestMatch-name").html("<h2 style='font-size: 4em;'>" + bestMatch.name + "</h2>");
                 $("#bestMatch-photo").html("<img src='" + bestMatch.photo + "' alt='best match photo'>");
-                //bring up the modal
+        //bring up the modal
                 $("#best-match-modal").modal("toggle")
             });
-
+            //empty all fields after user submitted to get ready for next user
             $("#name").val("");
             $("#photo").val("");
             $(".q").val("");
             $("#name").focus();
         } else {
             console.log("Please go back and check that all fields are completed");
-            return false;
+            /* return false; */
         }
+        return false;
     });
     </script>
 </body>
